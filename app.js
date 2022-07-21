@@ -32,7 +32,7 @@ app.use(cors())
 app.use(xss())
 
 app.get('/',(req,res)=>{
-  re.send('jobs api')
+  res.send('jobs api')
 })
 // routes
 app.use('/api/v1/auth', authRouter)
